@@ -1,20 +1,15 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# This is an original Python script.
+x = int(input('Введите n '))
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+def fibonacci(n):
+    if n >= 2:
+        n = fibonacci(n-1) + fibonacci(n-2)
+    elif n <= -2:
+        n = fibonacci(n+1) + fibonacci(n+2)
+    return n
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi(str(input()))
+print(fibonacci(x))
 
-bul = bool(1)
-if bul == 1:
-    print('Hello, World!')
-# init commit
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# (C) Voynov Daniil
